@@ -1,16 +1,20 @@
 .site-header {
+    text-decoration: none;
     background-color: #fff;
+
+
 }
+
 .sitenav-link {
     color: black;
     font-size: 13px;
-    line-height: 15px; 
+    line-height: 15px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
 }
-   
+
 .main-link {
     font-size: 13px;
     line-height: 15px;
@@ -18,55 +22,93 @@
     color: #fff;
     text-decoration: none;
 }
+
 .hero {
     background-color: #252420;
     color: white;
 }
+
 .hero-content {
     width: 390px;
 
 }
+
 .orange-line {
     width: 80px;
     height: 3px;
     background-color: #FF7500;
 }
+
 .hero-heading {
     font-size: 40px;
     line-height: 1.2;
-    letter-spacing: 0,5px;
+    letter-spacing: 0, 5px;
+    font-family: "Roboto Condensed", sans-serif;
 }
+
 .hero-img {
     width: 510px;
     height: 510px;
 }
+
 .hero-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+    font-family: "Roboto Condensed", sans-serif;
 }
+
 .features-heading {
     width: 440px;
     font-size: 72px;
     line-height: 1.2;
     letter-spacing: 0.5px;
+    font-family: "Roboto Condensed", sans-serif;
 }
+
 .feature {
     width: 340px;
 }
+
 .feature-warpp {
     width: 100px;
     height: 100px;
     background-color: rgba(255, 117, 0, 0.2);
 }
+
 .feature-heading {
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.5px;
 
 }
+
 .feature-info {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.5px;
+    font-family: "Roboto", sans-serif;
+}
+.ijtimoiy-tarmoqlar {
+    width: 100px;
+    height: 100px;
+}
+.promo-content {
+    width: 440px;
+}
+.promo-heading {
+    font-size: 40px;
+    line-height: 48px;
+}
+.promo-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.promo-higlht {
+    color: #FF7500;
+} 
+.promo-img {
+    width: 440px;
+    height: 440px;
+    object-fit: cover;
 }
