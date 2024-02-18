@@ -1,11 +1,27 @@
+*:focus {
+    outline: 2px dotted #FF7500;
+outline-offset: 3px;
+
+}
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom:  16px;
+    padding-top: 16px;
+    border-top: 5px solid #FF7500;
     background-color: #fff;
     color: black;
     text-decoration: none;
-
+}
+.logo-link {
+    transition: opacity 0.4s ease;
+}
+.logo-link:hover {
+    opacity: 0.8;
+}
+.logo-link:active {
+    opacity: 0.6;
 }
 .site-header-actions {
     display: flex;
@@ -15,32 +31,57 @@
     list-style: none;
     display: flex;
 }
+.feature-item:last-child{
+    margin: 0;
+}
 
-.sitenav-link {
-    display: flex;
-    justify-content: flex-start;
-    background-attachment: black;
-    color: black;
+.sitenav-item {
     font-size: 13px;
     line-height: 15px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
+    margin: 32px;
+    color: #000;
+    transition: color 0.4s ease;
+}
+.item {
+    color: #000;
+    text-decoration: none;
+}
+.sitenav-link:hover {
+    color: #FF7500;
+}
+.sitenav-link:active {
+    opacity: 0.6;
 }
 
 .main-link {
+    display: inline-block;
+   padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
     font-size: 13px;
     line-height: 15px;
     background-color: #FF7500;
     color: #fff;
     text-decoration: none;
+    transition: opacity 0.4s ease;
+}
+.main-link:hover{
+    opacity: 0.8;
+}
+.main-link:active{
+    opacity: 0.6;
 }
 
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: #252420;
     color: white;
 }
@@ -53,19 +94,33 @@
 .orange-line {
     width: 80px;
     height: 3px;
+    border: none;
+    margin: 0;
+    margin-bottom: 40px;
     background-color: #FF7500;
 }
 
 .hero-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: 0, 5px;
     font-family: "Roboto Condensed", sans-serif;
 }
+.hero-text {
+   margin-top: 0;
+   margin-bottom: 32px;
+
+}
 
 .hero-img {
     width: 510px;
     height: 510px;
+}
+.feature {
+    padding-top: 210px;
+    padding-bottom: 210px;
 }
 
 .hero-text {
@@ -77,6 +132,8 @@
 
 .features-heading {
     width: 440px;
+    margin-top: 0;
+    margin-bottom: 16px;
     font-size: 72px;
     line-height: 1.2;
     letter-spacing: 0.5px;
@@ -84,15 +141,24 @@
 }
 .feature-list {
     display: flex;
-   justify-content: space-between;
+   padding: 0;
+   margin: 0;
    list-style: none;
 }
 
 .feature {
     width: 340px;
+    margin-right: 40px;
+}
+.feature:last-child{
+    margin: 0;
 }
 
 .feature-warpp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: rgba(255, 117, 0, 0.2);
@@ -119,6 +185,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 120px;
+    padding-bottom: 160px;
     background-color: #252420;
     color: #fff;
 
@@ -127,12 +195,22 @@
     width: 440px;
 }
 .promo-heading {
+    margin-top: 0;
+   margin-bottom: 24px;
     font-size: 40px;
     line-height: 48px;
 }
+.promo-info-wrapper {
+    margin-bottom: 24px;
+}
 .promo-text {
+    margin-top: 0;
+    margin-bottom: 12px;
     font-size: 16px;
     line-height: 1.5;
+}
+.promo-text:last-child{
+  margin-bottom: 0;
 }
 .promo-higlht {
     color: #FF7500;
@@ -140,5 +218,6 @@
 .promo-img {
     width: 440px;
     height: 440px;
+    border-radius: 12px;
     object-fit: cover;
 }
